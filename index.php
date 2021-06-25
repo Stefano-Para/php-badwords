@@ -24,19 +24,21 @@ $testo = '<pre>' . "Drugo: " . $drugo . "\r\n \r\n" . "Walter: " . $walter . '</
             var_dump("<-- quanto è lungo questo testo?" . $testo);
             echo '</pre>';
 
-            echo $testo;
+            // echo $testo;
         ?>
     </p>
     <h3>Testo censurato</h3>
     <p>
         <?php
+            echo "La parola da censurare è: "  . "- " . $_GET["word"] . " -";
             echo '<pre>';
-            var_dump("<-- quanto è lungo questo testo?" . $testo);
+
+            var_dump("<-- quanto è lungo questo testo?" . $_GET["word"] , "***", $testo);
+
             echo '</pre>';
               
 
-            echo "!!! Parola da censurare: "  . $_GET["word"] . " !!!";
-            echo str_replace($_GET["word"] , "***", $testo);
+            // echo str_replace($_GET["word"] , "***", $testo);
         ?>
     </p>
 
