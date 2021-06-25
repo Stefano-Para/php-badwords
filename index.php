@@ -21,7 +21,7 @@ $testo = '<pre>' . "Drugo: " . $drugo . "\r\n \r\n" . "Walter: " . $walter . '</
     <p>
         <?php
             echo '<pre>';
-            var_dump($testo);
+            var_dump("<-- quanto è lungo questo testo?" . $testo);
             echo '</pre>';
 
             echo $testo;
@@ -31,7 +31,7 @@ $testo = '<pre>' . "Drugo: " . $drugo . "\r\n \r\n" . "Walter: " . $walter . '</
     <p>
         <?php
             echo '<pre>';
-            var_dump($testo);
+            var_dump("<-- quanto è lungo questo testo?" . $testo);
             echo '</pre>';
             
             echo str_replace($_GET["word"] , "***", $testo);
