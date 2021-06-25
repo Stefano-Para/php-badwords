@@ -33,7 +33,9 @@ $testo = '<pre>' . "Drugo: " . $drugo . "\r\n \r\n" . "Walter: " . $walter . '</
             echo '<pre>';
             var_dump("<-- quanto è lungo questo testo?" . $testo);
             echo '</pre>';
-            
+              
+
+            echo "!!! Parola da censurare: "  . $_GET["word"] . " !!!";
             echo str_replace($_GET["word"] , "***", $testo);
         ?>
     </p>
